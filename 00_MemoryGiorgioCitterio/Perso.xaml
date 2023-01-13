@@ -2,10 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_00_MemoryGiorgioCitterio.Perso"
-             Title="Perso">
+             Title="Perso"
+             BackgroundColor="Red">
     <VerticalStackLayout>
         <Label
-            Text="🎉🥳HAI VINTO!!!🥳🎉"
+            Text="🎉🥳HAI PERSO!"
             TextColor="HotPink"
             FontFamily="LowBudget"
             FontSize="52"
