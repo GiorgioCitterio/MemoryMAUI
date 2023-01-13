@@ -9,7 +9,7 @@
             Text="🎉🥳HAI VINTO!!!🥳🎉"
             TextColor="HotPink"
             FontFamily="LowBudget"
-            FontSize="50"
+            FontSize="52"
             Margin="50"
             FontAttributes="Bold"
             HorizontalOptions="Center"
@@ -68,11 +68,11 @@
             HorizontalOptions="Center"/>
         </StackLayout>
         <Button
-            Text="Torna alla pagina principale"
+            Text="⟹ Torna alla pagina principale ⟸"
             BackgroundColor="White"
             TextColor="Black"
             FontFamily="TimesNewRoman"
-            FontSize="18"
+            FontSize="24"
             Clicked="ToHome"
             CornerRadius="10"
             VerticalOptions="End"

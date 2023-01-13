@@ -4,9 +4,14 @@
              x:Class="_00_MemoryGiorgioCitterio.Perso"
              Title="Perso">
     <VerticalStackLayout>
-        <Label 
-            Text="Hai perso!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label
+            Text="🎉🥳HAI VINTO!!!🥳🎉"
+            TextColor="HotPink"
+            FontFamily="LowBudget"
+            FontSize="52"
+            Margin="50"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
     </VerticalStackLayout>
 </ContentPage>
