@@ -37,7 +37,6 @@ public partial class Vittoria : ContentPage
                 default:
                     break;
             }
-
         }
     }
     private async void ToHome(object sender, EventArgs e)
