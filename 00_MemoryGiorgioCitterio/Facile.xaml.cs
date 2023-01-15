@@ -8,7 +8,7 @@ public partial class Facile : ContentPage
     public int contCarteGir = 0;
     public ImageButton cartaGirata;
     public int coppieTrovate = 0;
-    public int mosse = 0;
+    public int mosse = 1;
     public Stopwatch sw = new Stopwatch();
     public int rigaCorrente;
     public int colonnaCorrente;
@@ -93,7 +93,6 @@ public partial class Facile : ContentPage
                 break;
         }
         contCarteGir++;
-        mosse++;
         lblMosse.Text = "Mosse: " + mosse;
         if (contCarteGir >= 2)
         {
@@ -102,6 +101,7 @@ public partial class Facile : ContentPage
                 esegui = true;
                 return;
             }
+            mosse++;
             await Task.Delay(500);
             if (matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)] == matricePosNumeri[Grid.GetRow(cartaGirata), Grid.GetColumn(cartaGirata)])
             {
@@ -120,7 +120,7 @@ public partial class Facile : ContentPage
                     SceltaTema.Dati.difficolta = Difficolta.Facile;
                     await Navigation.PushAsync(new Vittoria());
                 }
-                lblCoppieTrovate.Text = "Coppie trovate: " + coppieTrovate;
+                lblCoppieTrovate.Text = "Coppie: " + coppieTrovate;
                 esegui = true;
                 return;
             }

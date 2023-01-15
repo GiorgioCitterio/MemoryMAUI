@@ -584,34 +584,61 @@
                 Opacity="0.7" />
             </ImageButton.Shadow>
         </ImageButton>
-        <Label
-            x:Name="lblMosse"
-            Text="Mosse: 0"
+        <Border
             Grid.Row="6"
             Grid.Column="0"
-            TextColor="Black"
+            HeightRequest="70"
+            HorizontalOptions="Center"
+            WidthRequest="160"
+            Stroke="Black"
+            StrokeThickness="2"
+            StrokeShape="RoundRectangle 20,20,20,20">
+            <Label
+            x:Name="lblMosse"
+            Text="Mosse: 0"
+            TextColor="Red"
             FontSize="24"
+            Padding="5"
             FontFamily="TimesNewRoman"
+            HorizontalOptions="Center"
             VerticalTextAlignment="Center"/>
-        <Label
-            x:Name="lblCoppieTrovate"
-            Text="Coppie trovate: 0"
+        </Border>
+        <Border
             Grid.Row="6"
             Grid.Column="1"
-            TextColor="Black"
-            FontSize="24"
-            FontFamily="TimesNewRoman"
-            VerticalTextAlignment="Center"/>
-        <Label
-            x:Name="lblTempo"
-            Text="Tempo: 00:00"
-            Grid.Row="6"
-            Grid.Column="2"
-            TextColor="Black"
+            HeightRequest="70"
+            HorizontalOptions="Center"
+            WidthRequest="160"
+            Stroke="Black"
+            StrokeThickness="2"
+            StrokeShape="RoundRectangle 20,20,20,20">
+            <Label
+            x:Name="lblCoppieTrovate"
+            Text="Coppie: 0"
+            TextColor="Green"
             FontSize="24"
             FontFamily="TimesNewRoman"
             VerticalTextAlignment="Center"
-            HorizontalTextAlignment="Start"/>
+            HorizontalOptions="Center"/>
+        </Border>
+        <Border
+            Grid.Row="6"
+            Grid.Column="2"
+            HeightRequest="70"
+            HorizontalOptions="Center"
+            WidthRequest="160"
+            Stroke="Black"
+            StrokeThickness="2"
+            StrokeShape="RoundRectangle 20,20,20,20">
+            <Label
+                x:Name="lblTempo"
+                Text="Tempo: 00:00"
+                TextColor="Black"
+                FontSize="24"
+                FontFamily="TimesNewRoman"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+        </Border>
         <Button
             Text="Cambia livello di difficoltà"
             BackgroundColor="Black"
