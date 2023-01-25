@@ -20,3 +20,4 @@ Modifiche/funzionalità da aggiungere:
 - [ ] Markdown
 - [ ] Android
 - [ ] Audio manager
+- [ ] APK download
