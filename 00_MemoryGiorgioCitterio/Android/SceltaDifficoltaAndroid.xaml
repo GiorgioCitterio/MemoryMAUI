@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_00_MemoryGiorgioCitterio.Android.SceltaDifficoltaAndroid"
+             Title="SceltaDifficoltaAndroid"
+             BackgroundColor="#F4C531">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Frame
+            Margin="10"
+            BorderColor="Gray"
+            CornerRadius="5"
+            Padding="8"
+            WidthRequest="700"
+            Grid.Row="0"
+            Grid.Column="0">
+            <StackLayout>
+                <Label
+                Text="Scegli il livello di difficoltà"
+                TextColor="White"
+                Grid.Row="0"
+                Grid.Column="0"
+                FontFamily="PurpleSmile"
+                FontSize="18"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"/>
+                <BoxView 
+                    Color="Gray"
+                    HeightRequest="2"
+                    HorizontalOptions="Fill"/>
+                <Label 
+                    Text="Facile: 8 coppie da trovare, con 1 minuto e 30 secondi di tempo"
+                    TextColor="White"
+                    FontFamily="PurpleSmile"
+                    FontSize="18"
+                    VerticalTextAlignment="Center"/>
+                <Label
+                    Text="Medio: 12 coppie da trovare, con 2 minuti di tempo"
+                    TextColor="White"
+                    FontFamily="PurpleSmile"
+                    FontSize="18"
+                    VerticalTextAlignment="Center"/>
+                <Label
+                    Text="Difficile: 16 coppie da trovare, con 2 minuti di tempo"
+                    TextColor="White"
+                    FontFamily="PurpleSmile"
+                    FontSize="18"
+                    VerticalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
+        <Button
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            TextColor="Black"
+            Text="Facile 😃"
+            Clicked="Facile"
+            Grid.Column="0"
+            Grid.Row="1"
+            FontSize="20"
+            FontFamily="FiraSansBold"
+            BorderColor="DarkGreen"
+            BackgroundColor="Green"
+            BorderWidth="3"
+            WidthRequest="175"
+            HeightRequest="75"/>
+        <Button
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Text="Medio 🙂"
+            Clicked="Medio"
+            Grid.Column="0"
+            Grid.Row="2"
+            BorderColor="DarkGoldenrod"
+            BackgroundColor="Yellow"
+            BorderWidth="3"
+            WidthRequest="175"
+            HeightRequest="75"
+            FontSize="20"
+            FontFamily="FiraSansBold"
+            TextColor="Black"/>
+        <Button
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Text="Difficile 🤔"
+            Clicked="Difficile"
+            Grid.Column="0"
+            Grid.Row="3"
+            BorderColor="DarkRed"
+            BackgroundColor="Red"
+            BorderWidth="3"
+            WidthRequest="175"
+            HeightRequest="75"
+            FontSize="20"
+            FontFamily="FiraSansBold"
+            TextColor="Black"/>
+    </Grid>
+</ContentPage>
