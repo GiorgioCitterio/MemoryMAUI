@@ -6,7 +6,7 @@
              BackgroundColor="White">
     <Grid
         ColumnDefinitions="*, *, *, *, *, *"
-        RowDefinitions="*, *, *, *, *, *, *"
+        RowDefinitions="*, *, *, *, *, *, *, *"
         Padding="15">
         <ImageButton
             CornerRadius="15"
@@ -587,9 +587,10 @@
         <Border
             Grid.Row="6"
             Grid.Column="0"
+            Grid.ColumnSpan="2"
             HeightRequest="70"
             HorizontalOptions="Center"
-            WidthRequest="160"
+            WidthRequest="120"
             Stroke="Black"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 20,20,20,20">
@@ -605,10 +606,11 @@
         </Border>
         <Border
             Grid.Row="6"
-            Grid.Column="1"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
             HeightRequest="70"
             HorizontalOptions="Center"
-            WidthRequest="160"
+            WidthRequest="120"
             Stroke="Black"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 20,20,20,20">
@@ -623,10 +625,11 @@
         </Border>
         <Border
             Grid.Row="6"
-            Grid.Column="2"
+            Grid.Column="4"
+            Grid.ColumnSpan="2"
             HeightRequest="70"
             HorizontalOptions="Center"
-            WidthRequest="160"
+            WidthRequest="120"
             Stroke="Black"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 20,20,20,20">
@@ -640,18 +643,18 @@
                 HorizontalTextAlignment="Center"/>
         </Border>
         <Button
-            Text="Cambia livello di difficoltà"
+            Text="Cambia difficoltà"
             BackgroundColor="Black"
             TextColor="White"
             FontFamily="TimesNewRoman"
             FontSize="18"
-            Grid.Row="6"
-            Grid.Column="3"
-            Grid.ColumnSpan="2"
+            Grid.Row="7"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
             Clicked="StopGame"
             CornerRadius="15"
-            WidthRequest="235"
-            HeightRequest="75">
+            WidthRequest="180"
+            HeightRequest="60">
         </Button>
         <Button
             Text="Cambia tema"
@@ -659,12 +662,13 @@
             TextColor="White"
             FontFamily="TimesNewRoman"
             FontSize="18"
-            Grid.Row="6"
-            Grid.Column="5"
+            Grid.Row="7"
+            Grid.Column="3"
+            Grid.ColumnSpan="3"
             Clicked="ChangeTheme"
             CornerRadius="15"
-            WidthRequest="150"
-            HeightRequest="75">
+            WidthRequest="160"
+            HeightRequest="60">
         </Button>
     </Grid>
 </ContentPage>
