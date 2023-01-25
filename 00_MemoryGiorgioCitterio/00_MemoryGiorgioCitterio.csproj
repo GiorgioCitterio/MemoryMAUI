@@ -46,22 +46,25 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Android\Difficile.xaml">
+	  <MauiXaml Update="Android\SceltaTemaAndroid.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Android\Facile.xaml">
+	  <MauiXaml Update="Windows\Difficile.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Android\Medio.xaml">
+	  <MauiXaml Update="Windows\Facile.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Android\Perso.xaml">
+	  <MauiXaml Update="Windows\Medio.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Android\SceltaTema.xaml">
+	  <MauiXaml Update="Windows\Perso.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Android\Vittoria.xaml">
+	  <MauiXaml Update="Windows\SceltaTema.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Windows\Vittoria.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

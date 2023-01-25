@@ -11,7 +11,7 @@ public partial class App : Application
         }
         else if (DeviceInfo.Platform == DevicePlatform.Android)
         {
-            //MainPage = new MainPageAndroid();
+            MainPage = new NavigationPage(new Android.SceltaTemaAndroid());
         }
         
     }
