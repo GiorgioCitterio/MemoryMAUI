@@ -6,4 +6,19 @@ public partial class SceltaDifficoltaAndroid : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void Facile(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new FacileAndroid());
+    }
+
+    private async void Medio(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new MedioAndroid());
+    }
+
+    private async void Difficile(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new DifficileAndroid());
+    }
 }

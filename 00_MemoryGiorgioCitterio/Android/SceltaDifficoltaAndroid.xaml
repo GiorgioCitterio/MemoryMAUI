@@ -2,24 +2,18 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_00_MemoryGiorgioCitterio.Android.SceltaDifficoltaAndroid"
-             Title="SceltaDifficoltaAndroid"
              BackgroundColor="#F4C531">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="150"></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+    <Grid
+        ColumnDefinitions="*"
+        RowDefinitions="230, *, *, *">
         <Frame
+            BackgroundColor="Black"
             Margin="10"
             BorderColor="Gray"
             CornerRadius="5"
-            Padding="8"
-            WidthRequest="700"
+            Padding="15"
+            WidthRequest="365"
+            HeightRequest="210"
             Grid.Row="0"
             Grid.Column="0">
             <StackLayout>

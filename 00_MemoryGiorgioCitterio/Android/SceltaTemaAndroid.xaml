@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_00_MemoryGiorgioCitterio.Android.SceltaTemaAndroid"
-             Title="SceltaTemaAndroid">
+             Title="Memory"
+             BackgroundColor="Black">
     <Grid
         ColumnDefinitions="*, *, *, *, *"
         RowDefinitions="*, *, *, *, *,*">
@@ -13,7 +14,7 @@
             Grid.Column="0"
             Grid.ColumnSpan="5"
             FontFamily="PurpleSmile"
-            FontSize="25"
+            FontSize="14"
             HorizontalOptions="Center"
             VerticalOptions="Center"
             Padding="50"/>
@@ -23,8 +24,7 @@
             Grid.Column="1"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            HeightRequest="300"
-            WidthRequest="300"/>
+            WidthRequest="150"/>
         <Button
             CornerRadius="10"
             BackgroundColor="White"
@@ -36,11 +36,11 @@
             Text="Arte"
             BorderWidth="1"
             FontFamily="Requiem"
-            FontSize="18"
+            FontSize="10"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            WidthRequest="100"
-            HeightRequest="50"
+            WidthRequest="65"
+            HeightRequest="35"
             BorderColor="Black"/>
         <Image
             Source="tema2.jpg"
@@ -48,8 +48,7 @@
             Grid.Column="3"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            HeightRequest="300"
-            WidthRequest="300"/>
+            WidthRequest="150"/>
         <Button
             CornerRadius="10"
             BackgroundColor="White"
@@ -61,11 +60,11 @@
             Text="Marvel"
             BorderWidth="1"
             FontFamily="Requiem"
-            FontSize="18"
+            FontSize="10"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            WidthRequest="100"
-            HeightRequest="50"
+            WidthRequest="65"
+            HeightRequest="35"
             BorderColor="Black"/>
         <Image
             Source="tema3.jpg"
@@ -73,8 +72,7 @@
             Grid.Column="1"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            HeightRequest="300"
-            WidthRequest="300"/>
+            WidthRequest="150"/>
         <Button
             CornerRadius="10"
             BackgroundColor="White"
@@ -86,11 +84,11 @@
             Text="Frutta"
             BorderWidth="1"
             FontFamily="Requiem"
-            FontSize="18"
+            FontSize="10"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            WidthRequest="100"
-            HeightRequest="50"
+            WidthRequest="65"
+            HeightRequest="35"
             BorderColor="Black"/>
         <Image
             Source="tema4.jpg"
@@ -98,8 +96,7 @@
             Grid.Column="3"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            HeightRequest="300"
-            WidthRequest="300"/>
+            WidthRequest="150"/>
         <Button
             CornerRadius="10"
             BackgroundColor="White"
@@ -111,11 +108,11 @@
             Text="Paesi"
             BorderWidth="1"
             FontFamily="Requiem"
-            FontSize="18"
+            FontSize="10"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            WidthRequest="100"
-            HeightRequest="50"
+            WidthRequest="65"
+            HeightRequest="35"
             BorderColor="Black"/>
     </Grid>
 </ContentPage>
