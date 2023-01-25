@@ -5,6 +5,14 @@ public partial class App : Application
 	public App()
 	{
 		InitializeComponent();
-        MainPage = new NavigationPage(new SceltaTema());
+        if (DeviceInfo.Platform == DevicePlatform.WinUI)
+        {
+            MainPage = new NavigationPage(new SceltaTema());
+        }
+        else if (DeviceInfo.Platform == DevicePlatform.Android)
+        {
+            //MainPage = new MainPageAndroid();
+        }
+        
     }
 }
