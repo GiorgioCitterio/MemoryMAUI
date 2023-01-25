@@ -6,4 +6,9 @@ public partial class SconfittaAndroid : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void ToHome(object sender, EventArgs e)
+    {
+		await Navigation.PopToRootAsync();
+    }
 }

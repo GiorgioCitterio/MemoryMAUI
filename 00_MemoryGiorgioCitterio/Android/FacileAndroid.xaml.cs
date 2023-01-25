@@ -46,7 +46,7 @@ public partial class FacileAndroid : ContentPage
                 secondi -= 1;
                 if (secondi == 0 && vittoria == false)
                 {
-                    await Navigation.PushAsync(new Perso());
+                    await Navigation.PushAsync(new SconfittaAndroid());
                 }
                 else
                 {
