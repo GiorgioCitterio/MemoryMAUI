@@ -10,7 +10,7 @@
         Padding="15">
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             BorderColor="Black"
             BorderWidth="5"
@@ -26,7 +26,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             Grid.Row="0"
             Grid.Column="1"
@@ -42,7 +42,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             Grid.Row="0"
             Grid.Column="2"
@@ -58,7 +58,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             Grid.Row="0"
             Grid.Column="3"
@@ -74,7 +74,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             Grid.Row="1"
             Grid.Column="0"
@@ -90,7 +90,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             Grid.Row="1"
             Grid.Column="1"
@@ -106,7 +106,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             Grid.Row="1"
             Grid.Column="2"
@@ -122,7 +122,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             Grid.Row="1"
             Grid.Column="3"
@@ -138,7 +138,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             Grid.Row="2"
             Grid.Column="0"
@@ -154,7 +154,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             Grid.Row="2"
             Grid.Column="1"
@@ -170,7 +170,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             Grid.Row="2"
             Grid.Column="2"
             Clicked="HasClicked" 
@@ -186,7 +186,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             Grid.Row="2"
             Grid.Column="3"
@@ -202,7 +202,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             Grid.Row="3"
             Grid.Column="0"
@@ -219,7 +219,7 @@
         <ImageButton
             CornerRadius="15"
             BackgroundColor="#F4C531"
-            Margin="7"
+            Margin="5"
             Grid.Row="3"
             Grid.Column="1"
             Clicked="HasClicked" 
@@ -234,7 +234,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             Grid.Row="3"
             Grid.Column="2"
@@ -250,7 +250,7 @@
         </ImageButton>
         <ImageButton
             CornerRadius="15"
-            Margin="7"
+            Margin="5"
             BackgroundColor="#F4C531"
             Grid.Row="3"
             Grid.Column="3"
@@ -269,7 +269,7 @@
             Grid.Column="0"
             HeightRequest="70"
             HorizontalOptions="Center"
-            WidthRequest="90"
+            WidthRequest="120"
             Stroke="Black"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 20,20,20,20">
@@ -287,8 +287,9 @@
             Grid.Row="4"
             Grid.Column="1"
             HeightRequest="70"
+            Grid.ColumnSpan="2"
             HorizontalOptions="Center"
-            WidthRequest="90"
+            WidthRequest="120"
             Stroke="Black"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 20,20,20,20">
@@ -306,7 +307,7 @@
             Grid.Column="3"
             HeightRequest="70"
             HorizontalOptions="Center"
-            WidthRequest="90"
+            WidthRequest="120"
             Stroke="Black"
             StrokeThickness="2"
             StrokeShape="RoundRectangle 20,20,20,20">
