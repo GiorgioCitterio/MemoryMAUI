@@ -2,11 +2,483 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_00_MemoryGiorgioCitterio.Android.MedioAndroid"
-             Title="MedioAndroid">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="MedioAndroid"
+             BackgroundColor="White">
+    <Grid
+        ColumnDefinitions="*, *, *, *, *, *"
+        RowDefinitions="*, *, *, *, 100, 100"
+        Padding="15">
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            BorderColor="Black"
+            BorderWidth="5"
+            Grid.Row="0"
+            Grid.Column="0"
+            Clicked="HasClicked">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="0"
+            Grid.Column="1"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="0"
+            Grid.Column="2"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="0"
+            Grid.Column="3"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="0"
+            Grid.Column="4"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="0"
+            Grid.Column="5"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="1"
+            Grid.Column="0"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="1"
+            Grid.Column="1"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="1"
+            Grid.Column="2"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="1"
+            Grid.Column="3"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="1"
+            Grid.Column="4"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="1"
+            Grid.Column="5"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="2"
+            Grid.Column="0"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="2"
+            Grid.Column="1"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            Grid.Row="2"
+            Grid.Column="2"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5" 
+            BackgroundColor="#F4C531">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="2"
+            Grid.Column="3"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="2"
+            Grid.Column="4"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="2"
+            Grid.Column="5"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="3"
+            Grid.Column="0"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            BackgroundColor="#F4C531"
+            Margin="5"
+            Grid.Row="3"
+            Grid.Column="1"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="3"
+            Grid.Column="2"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="3"
+            Grid.Column="3"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="3"
+            Grid.Column="4"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <ImageButton
+            CornerRadius="15"
+            Margin="5"
+            BackgroundColor="#F4C531"
+            Grid.Row="3"
+            Grid.Column="5"
+            Clicked="HasClicked" 
+            BorderColor="Black"
+            BorderWidth="5">
+            <ImageButton.Shadow>
+                <Shadow Brush="Black"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.7" />
+            </ImageButton.Shadow>
+        </ImageButton>
+        <Border
+            Grid.Row="4"
+            Grid.Column="0"
+            HeightRequest="70"
+            HorizontalOptions="Center"
+            WidthRequest="120"
+            Stroke="Black"
+            StrokeThickness="2"
+            Grid.ColumnSpan="2"
+            StrokeShape="RoundRectangle 20,20,20,20">
+            <Label
+            x:Name="lblMosse"
+            Text="Mosse: 0"
+            TextColor="Red"
+            FontSize="24"
+            Padding="5"
+            FontFamily="TimesNewRoman"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"/>
+        </Border>
+        <Border
+            Grid.Row="4"
+            Grid.Column="2"
+            HeightRequest="70"
+            Grid.ColumnSpan="2"
+            HorizontalOptions="Center"
+            WidthRequest="120"
+            Stroke="Black"
+            StrokeThickness="2"
+            StrokeShape="RoundRectangle 20,20,20,20">
+            <Label
+            x:Name="lblCoppieTrovate"
+            Text="Coppie: 0"
+            TextColor="Green"
+            FontSize="24"
+            FontFamily="TimesNewRoman"
+            VerticalTextAlignment="Center"
+            HorizontalOptions="Center"/>
+        </Border>
+        <Border
+            Grid.Row="4"
+            Grid.Column="4"
+            HeightRequest="70"
+            HorizontalOptions="Center"
+            WidthRequest="120"
+            Stroke="Black"
+            StrokeThickness="2"
+            Grid.ColumnSpan="2"
+            StrokeShape="RoundRectangle 20,20,20,20">
+            <Label
+                x:Name="lblTempo"
+                Text="Tempo: 00:00"
+                TextColor="Black"
+                FontSize="24"
+                FontFamily="TimesNewRoman"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+        </Border>
+        <Button
+            Text="Cambia difficoltà"
+            BackgroundColor="Black"
+            TextColor="White"
+            FontFamily="TimesNewRoman"
+            FontSize="18"
+            Grid.Row="5"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Clicked="StopGame"
+            CornerRadius="15"
+            WidthRequest="180"
+            HeightRequest="60"
+            HorizontalOptions="Center">
+        </Button>
+        <Button
+            Text="Cambia tema"
+            BackgroundColor="Black"
+            TextColor="White"
+            FontFamily="TimesNewRoman"
+            FontSize="18"
+            Grid.Row="5"
+            Grid.Column="3"
+            Grid.ColumnSpan="3"
+            Clicked="ChangeTheme"
+            CornerRadius="15"
+            WidthRequest="160"
+            HeightRequest="60"
+            HorizontalOptions="Center">
+        </Button>
+    </Grid>
 </ContentPage>
