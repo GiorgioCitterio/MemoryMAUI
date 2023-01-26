@@ -314,7 +314,8 @@
             <Label
                 x:Name="lblTempo"
                 Text="Tempo: 00:00"
-                TextColor="Black"
+                TextColor="White"
+                BackgroundColor="Black"
                 FontSize="24"
                 FontFamily="TimesNewRoman"
                 VerticalTextAlignment="Center"

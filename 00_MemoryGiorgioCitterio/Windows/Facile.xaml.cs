@@ -16,9 +16,9 @@ public partial class Facile : ContentPage
     public int secondi = 90;
     public bool vittoria = false;
     public bool esegui = true;
+    public bool eseguiMusica = false;
     private readonly IAudioManager audioManager;
-    
-
+    private IAudioPlayer player;
     public Facile(IAudioManager audioManager)
 	{
 		InitializeComponent();
@@ -51,6 +51,7 @@ public partial class Facile : ContentPage
                 secondi -= 1;
                 if (secondi == 0 && vittoria == false)
                 {
+                    player.Stop();
                     await Navigation.PushAsync(new Perso());
                 }
                 else
@@ -63,6 +64,10 @@ public partial class Facile : ContentPage
     }
     private async void HasClicked(object sender, EventArgs e)
     {
+        if (!eseguiMusica)
+        {
+            Audio();
+        }
         if (!esegui)
         {
             return;
@@ -115,8 +120,9 @@ public partial class Facile : ContentPage
                 cartaGirata.IsEnabled = false;
                 cartaGirata = null;
                 coppieTrovate++;
-                if (coppieTrovate == 8)
+                if (coppieTrovate == 1)
                 {
+                    player.Stop();
                     vittoria = true;
                     sw.Stop();
                     SceltaTema.Dati.mosseImpiegate = mosse;
@@ -144,10 +150,18 @@ public partial class Facile : ContentPage
     }
     private async void StopGame(object sender, EventArgs e)
     {
+        player.Stop();
         await Navigation.PopAsync();
     }
     private async void ChangeTheme(object sender, EventArgs e)
     {
+        player.Stop();
         await Navigation.PopToRootAsync();
+    }
+    private async void Audio()
+    {
+        player = audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("tetris.mp3"));
+        player.Play();
+        eseguiMusica = true;
     }
 }

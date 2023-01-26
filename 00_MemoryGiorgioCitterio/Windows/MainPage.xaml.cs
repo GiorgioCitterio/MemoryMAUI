@@ -1,9 +1,9 @@
-﻿namespace _00_MemoryGiorgioCitterio;
+﻿using Plugin.Maui.Audio;
+
+namespace _00_MemoryGiorgioCitterio;
 
 public partial class MainPage : ContentPage
 {
-
-
 	public MainPage()
 	{
 		InitializeComponent();
@@ -11,7 +11,7 @@ public partial class MainPage : ContentPage
 
     private async void Facile(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Facile());
+        await Navigation.PushAsync(new Facile(AudioManager.Current));
     }
 
     private async void Medio(object sender, EventArgs e)

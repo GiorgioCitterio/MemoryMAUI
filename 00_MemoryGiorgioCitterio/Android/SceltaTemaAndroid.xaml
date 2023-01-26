@@ -14,7 +14,7 @@
             Grid.Column="0"
             Grid.ColumnSpan="5"
             FontFamily="PurpleSmile"
-            FontSize="14"
+            FontSize="13"
             HorizontalOptions="Center"
             VerticalOptions="Center"
             Padding="50"/>
@@ -36,11 +36,11 @@
             Text="Arte"
             BorderWidth="1"
             FontFamily="Requiem"
-            FontSize="10"
+            FontSize="9"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            WidthRequest="65"
-            HeightRequest="35"
+            WidthRequest="60"
+            HeightRequest="30"
             BorderColor="Black"/>
         <Image
             Source="tema2.jpg"
@@ -60,11 +60,11 @@
             Text="Marvel"
             BorderWidth="1"
             FontFamily="Requiem"
-            FontSize="10"
+            FontSize="8"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            WidthRequest="65"
-            HeightRequest="35"
+            WidthRequest="60"
+            HeightRequest="30"
             BorderColor="Black"/>
         <Image
             Source="tema3.jpg"
@@ -84,11 +84,11 @@
             Text="Frutta"
             BorderWidth="1"
             FontFamily="Requiem"
-            FontSize="10"
+            FontSize="8"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            WidthRequest="65"
-            HeightRequest="35"
+            WidthRequest="60"
+            HeightRequest="30"
             BorderColor="Black"/>
         <Image
             Source="tema4.jpg"
@@ -108,11 +108,11 @@
             Text="Paesi"
             BorderWidth="1"
             FontFamily="Requiem"
-            FontSize="10"
+            FontSize="9"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            WidthRequest="65"
-            HeightRequest="35"
+            WidthRequest="60"
+            HeightRequest="30"
             BorderColor="Black"/>
     </Grid>
 </ContentPage>
