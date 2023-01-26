@@ -14,8 +14,7 @@
             FontAttributes="Bold"
             HorizontalOptions="Center"
             VerticalOptions="Center"/>
-        <StackLayout
-            Padding="100">
+        <StackLayout>
             <Label
             Text="Ultimi 5 risultati:"
             TextColor="Black"
@@ -75,7 +74,8 @@
             FontSize="19"
             Clicked="ToHome"
             CornerRadius="10"
-            VerticalOptions="End"
+            VerticalOptions="EndAndExpand"
+            Margin="0,375, 0, 0"
             HorizontalOptions="Center">
         </Button>
     </VerticalStackLayout>
