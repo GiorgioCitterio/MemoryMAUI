@@ -1,3 +1,4 @@
+using Plugin.Maui.Audio;
 using System.Diagnostics;
 
 namespace _00_MemoryGiorgioCitterio;
@@ -15,9 +16,13 @@ public partial class Facile : ContentPage
     public int secondi = 90;
     public bool vittoria = false;
     public bool esegui = true;
-    public Facile()
+    private readonly IAudioManager audioManager;
+    
+
+    public Facile(IAudioManager audioManager)
 	{
 		InitializeComponent();
+        this.audioManager = audioManager;
         sw.Start();
         Random random = new Random();
         for (int i = 1; i < 9; i++)
