@@ -13,7 +13,7 @@
 ---
 Modifiche/funzionalità da aggiungere:
 - [ ] Database sqlite
-- [ ] Markdown
+- [x] Markdown
 - [x] Android
 - [ ] Audio manager
 - [ ] APK download
