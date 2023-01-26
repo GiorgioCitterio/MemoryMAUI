@@ -22,8 +22,8 @@ public partial class Facile : ContentPage
     public Facile(IAudioManager audioManager)
 	{
 		InitializeComponent();
-        this.audioManager = audioManager;
         sw.Start();
+        this.audioManager = audioManager;
         Random random = new Random();
         for (int i = 1; i < 9; i++)
         {
@@ -120,7 +120,7 @@ public partial class Facile : ContentPage
                 cartaGirata.IsEnabled = false;
                 cartaGirata = null;
                 coppieTrovate++;
-                if (coppieTrovate == 1)
+                if (coppieTrovate == 8)
                 {
                     player.Stop();
                     vittoria = true;

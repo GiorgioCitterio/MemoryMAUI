@@ -1,3 +1,4 @@
+using Plugin.Maui.Audio;
 using System.Diagnostics;
 
 namespace _00_MemoryGiorgioCitterio;
@@ -14,10 +15,14 @@ public partial class Medio : ContentPage
     public int secondi = 120;
     public bool vittoria = false;
     public bool esegui = true;
-    public Medio()
+    public bool eseguiMusica = false;
+    private readonly IAudioManager audioManager;
+    private IAudioPlayer player;
+    public Medio(IAudioManager audioManager)
 	{
 		InitializeComponent();
         sw.Start();
+        this.audioManager = audioManager;
         Random random = new Random();
         for (int i = 1; i < 13; i++)
         {
@@ -45,6 +50,7 @@ public partial class Medio : ContentPage
                 secondi -= 1;
                 if (secondi == 0 && vittoria == false)
                 {
+                    player.Stop();
                     await Navigation.PushAsync(new Perso());
                 }
                 else
@@ -57,6 +63,10 @@ public partial class Medio : ContentPage
     }
     private async void HasClicked(object sender, EventArgs e)
     {
+        if (!eseguiMusica)
+        {
+            Audio();
+        }
         if (!esegui)
         {
             return;
@@ -113,6 +123,7 @@ public partial class Medio : ContentPage
                 {
                     vittoria = true;
                     sw.Stop();
+                    player.Stop();
                     SceltaTema.Dati.mosseImpiegate = mosse;
                     SceltaTema.Dati.tempoImpiegato = sw.Elapsed;
                     SceltaTema.Dati.data = DateTime.Now;
@@ -138,10 +149,18 @@ public partial class Medio : ContentPage
     }
     private async void StopGame(object sender, EventArgs e)
     {
+        player.Stop();
         await Navigation.PopAsync();
     }
     private async void ChangeTheme(object sender, EventArgs e)
     {
+        player.Stop();
         await Navigation.PopToRootAsync();
+    }
+    private async void Audio()
+    {
+        player = audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("tetris.mp3"));
+        player.Play();
+        eseguiMusica = true;
     }
 }

@@ -16,12 +16,12 @@ public partial class MainPage : ContentPage
 
     private async void Medio(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Medio());
+        await Navigation.PushAsync(new Medio(AudioManager.Current));
     }
 
     private async void Difficile(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Difficile());
+        await Navigation.PushAsync(new Difficile(AudioManager.Current));
     }
 }
 
