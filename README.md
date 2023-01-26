@@ -1,9 +1,5 @@
 # Memory MAUI
 
-### Gif animations:
-gif
-
----
 ### Piattaforme:
 - Windows
 - Android
@@ -18,7 +14,7 @@ gif
 Modifiche/funzionalità da aggiungere:
 - [ ] Database sqlite
 - [ ] Markdown
-- [ ] Android
+- [x] Android
 - [ ] Audio manager
 - [ ] APK download
 - [ ] impostazione timer
