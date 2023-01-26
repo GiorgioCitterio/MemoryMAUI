@@ -1,4 +1,6 @@
-﻿namespace _00_MemoryGiorgioCitterio;
+﻿using Plugin.Maui.Audio;
+
+namespace _00_MemoryGiorgioCitterio;
 
 public static class MauiProgram
 {
@@ -17,7 +19,8 @@ public static class MauiProgram
                 fonts.AddFont("Requiem.ttf", "Requiem");
                 fonts.AddFont("Low Budget.ttf", "LowBudget");
             });
-
+		builder.Services.AddSingleton(AudioManager.Current);
+		builder.Services.AddTransient<Facile>();
 		return builder.Build();
 	}
 }

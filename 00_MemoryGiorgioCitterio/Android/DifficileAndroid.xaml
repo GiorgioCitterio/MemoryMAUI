@@ -634,9 +634,10 @@
             StrokeThickness="2"
             StrokeShape="RoundRectangle 20,20,20,20">
             <Label
+                BackgroundColor="Black"
                 x:Name="lblTempo"
                 Text="Tempo: 00:00"
-                TextColor="Black"
+                TextColor="White"
                 FontSize="24"
                 FontFamily="TimesNewRoman"
                 VerticalTextAlignment="Center"

@@ -1,3 +1,4 @@
+using Plugin.Maui.Audio;
 using System.Diagnostics;
 
 namespace _00_MemoryGiorgioCitterio;
@@ -15,10 +16,14 @@ public partial class Facile : ContentPage
     public int secondi = 90;
     public bool vittoria = false;
     public bool esegui = true;
-    public Facile()
+    public bool eseguiMusica = false;
+    private readonly IAudioManager audioManager;
+    private IAudioPlayer player;
+    public Facile(IAudioManager audioManager)
 	{
 		InitializeComponent();
         sw.Start();
+        this.audioManager = audioManager;
         Random random = new Random();
         for (int i = 1; i < 9; i++)
         {
@@ -46,6 +51,7 @@ public partial class Facile : ContentPage
                 secondi -= 1;
                 if (secondi == 0 && vittoria == false)
                 {
+                    player.Stop();
                     await Navigation.PushAsync(new Perso());
                 }
                 else
@@ -58,6 +64,10 @@ public partial class Facile : ContentPage
     }
     private async void HasClicked(object sender, EventArgs e)
     {
+        if (!eseguiMusica)
+        {
+            Audio();
+        }
         if (!esegui)
         {
             return;
@@ -112,6 +122,7 @@ public partial class Facile : ContentPage
                 coppieTrovate++;
                 if (coppieTrovate == 8)
                 {
+                    player.Stop();
                     vittoria = true;
                     sw.Stop();
                     SceltaTema.Dati.mosseImpiegate = mosse;
@@ -139,10 +150,18 @@ public partial class Facile : ContentPage
     }
     private async void StopGame(object sender, EventArgs e)
     {
+        player.Stop();
         await Navigation.PopAsync();
     }
     private async void ChangeTheme(object sender, EventArgs e)
     {
+        player.Stop();
         await Navigation.PopToRootAsync();
+    }
+    private async void Audio()
+    {
+        player = audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("tetris.mp3"));
+        player.Play();
+        eseguiMusica = true;
     }
 }
