@@ -2,11 +2,81 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_00_MemoryGiorgioCitterio.Android.VittoriaAndroid"
-             Title="VittoriaAndroid">
+             Title="Vittoria"
+             BackgroundColor="#F4C531">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label
+            Text="🎉🥳HAI VINTO!!!🥳🎉"
+            TextColor="HotPink"
+            FontFamily="LowBudget"
+            FontSize="26"
+            Margin="50"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+        <StackLayout
+            Padding="100">
+            <Label
+            Text="Ultimi 5 risultati:"
+            TextColor="Black"
+            Grid.Row="1"
+            Grid.Column="0"
+            FontFamily="TimesNewRoman"
+            FontSize="18"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
+            <Label
+            x:Name="lbl1"
+            Text="1: "
+            TextColor="Black"
+            FontFamily="TimesNewRoman"
+            FontSize="18"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+            <Label
+            x:Name="lbl2"
+            Text="2: "
+            TextColor="Black"
+            FontFamily="TimesNewRoman"
+            FontSize="18"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+            <Label
+            x:Name="lbl3"
+            Text="3: "
+            TextColor="Black"
+            FontFamily="TimesNewRoman"
+            FontSize="18"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+            <Label
+            x:Name="lbl4"
+            Text="4: "
+            TextColor="Black"
+            FontFamily="TimesNewRoman"
+            FontSize="18"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+            <Label
+            x:Name="lbl5"
+            Text="5: "
+            TextColor="Black"
+            FontFamily="TimesNewRoman"
+            FontSize="18"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        </StackLayout>
+        <Button
+            Text="⟹ Torna alla pagina principale ⟸"
+            BackgroundColor="White"
+            TextColor="Black"
+            FontFamily="TimesNewRoman"
+            FontSize="19"
+            Clicked="ToHome"
+            CornerRadius="10"
+            VerticalOptions="End"
+            HorizontalOptions="Center">
+        </Button>
     </VerticalStackLayout>
 </ContentPage>
