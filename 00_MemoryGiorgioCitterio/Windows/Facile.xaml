@@ -278,7 +278,7 @@
             x:Name="lblMosse"
             Text="Mosse: 0"
             TextColor="Red"
-            FontSize="24"
+            FontSize="22"
             Padding="5"
             FontFamily="TimesNewRoman"
             HorizontalOptions="Center"
@@ -297,7 +297,7 @@
             x:Name="lblCoppieTrovate"
             Text="Coppie: 0"
             TextColor="Green"
-            FontSize="24"
+            FontSize="22"
             FontFamily="TimesNewRoman"
             VerticalTextAlignment="Center"
             HorizontalOptions="Center"/>
@@ -315,7 +315,7 @@
                 x:Name="lblTempo"
                 Text="Tempo: 00:00"
                 TextColor="Black"
-                FontSize="24"
+                FontSize="22"
                 FontFamily="TimesNewRoman"
                 VerticalTextAlignment="Center"
                 HorizontalTextAlignment="Center"/>

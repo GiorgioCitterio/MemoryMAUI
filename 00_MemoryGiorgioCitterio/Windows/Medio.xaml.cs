@@ -50,7 +50,7 @@ public partial class Medio : ContentPage
                 secondi -= 1;
                 if (secondi == 0 && vittoria == false)
                 {
-                    player.Stop();
+                    Audio();
                     await Navigation.PushAsync(new Perso());
                 }
                 else
@@ -149,16 +149,21 @@ public partial class Medio : ContentPage
     }
     private async void StopGame(object sender, EventArgs e)
     {
-        player.Stop();
+        Audio();
         await Navigation.PopAsync();
     }
     private async void ChangeTheme(object sender, EventArgs e)
     {
-        player.Stop();
+        Audio();
         await Navigation.PopToRootAsync();
     }
     private async void Audio()
     {
+        if (eseguiMusica)
+        {
+            player.Stop();
+            return;
+        }
         player = audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("tetris.mp3"));
         player.Play();
         eseguiMusica = true;
