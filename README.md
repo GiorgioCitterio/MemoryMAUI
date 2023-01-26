@@ -20,4 +20,4 @@ Modifiche/funzionalità da aggiungere:
 - [ ] APK download
 - [ ] impostazione timer/audio
 - [ ] versione e codice sorg
-
+- [ ] icone
