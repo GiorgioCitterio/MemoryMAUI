@@ -18,4 +18,5 @@ Modifiche/funzionalità da aggiungere:
 - [ ] Audio manager
 - [ ] APK download
 - [ ] impostazione timer/audio
+- [ ] versione e codice sorg
 
