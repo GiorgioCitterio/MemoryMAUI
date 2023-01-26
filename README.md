@@ -16,7 +16,7 @@ Modifiche/funzionalità da aggiungere:
 - [ ] Database sqlite
 - [x] Markdown
 - [x] Android
-- [ ] Audio manager
+- [x] Audio manager (facile, medio, difficile)
 - [ ] APK download
 - [ ] impostazione timer/audio
 - [ ] versione e codice sorg
