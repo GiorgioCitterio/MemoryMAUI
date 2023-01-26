@@ -1,3 +1,4 @@
+using Plugin.Maui.Audio;
 using System.Diagnostics;
 
 namespace _00_MemoryGiorgioCitterio.Android;
@@ -15,10 +16,14 @@ public partial class FacileAndroid : ContentPage
     public int secondi = 90;
     public bool vittoria = false;
     public bool esegui = true;
-    public FacileAndroid()
+    public bool eseguiMusica = false;
+    private readonly IAudioManager audioManager;
+    private IAudioPlayer player;
+    public FacileAndroid(IAudioManager audioManager)
     {
         InitializeComponent();
         sw.Start();
+        this.audioManager = audioManager;
         Random random = new Random();
         for (int i = 1; i < 9; i++)
         {
@@ -46,6 +51,7 @@ public partial class FacileAndroid : ContentPage
                 secondi -= 1;
                 if (secondi == 0 && vittoria == false)
                 {
+                    player.Stop();
                     await Navigation.PushAsync(new SconfittaAndroid());
                 }
                 else
@@ -58,6 +64,10 @@ public partial class FacileAndroid : ContentPage
     }
     private async void HasClicked(object sender, EventArgs e)
     {
+        if (!eseguiMusica)
+        {
+            Audio();
+        }
         if (!esegui)
         {
             return;
@@ -114,6 +124,7 @@ public partial class FacileAndroid : ContentPage
                 {
                     vittoria = true;
                     sw.Stop();
+                    player.Stop();
                     SceltaTemaAndroid.DatiAndroid.mosseImpiegate = mosse;
                     SceltaTemaAndroid.DatiAndroid.tempoImpiegato = sw.Elapsed;
                     SceltaTemaAndroid.DatiAndroid.data = DateTime.Now;
@@ -139,10 +150,18 @@ public partial class FacileAndroid : ContentPage
     }
     private async void StopGame(object sender, EventArgs e)
     {
+        player.Stop();
         await Navigation.PopAsync();
     }
     private async void ChangeTheme(object sender, EventArgs e)
     {
+        player.Stop();
         await Navigation.PopToRootAsync();
+    }
+    private async void Audio()
+    {
+        player = audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("tetris.mp3"));
+        player.Play();
+        eseguiMusica = true;
     }
 }
