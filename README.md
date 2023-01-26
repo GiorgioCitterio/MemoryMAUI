@@ -17,4 +17,5 @@ Modifiche/funzionalità da aggiungere:
 - [x] Android
 - [ ] Audio manager
 - [ ] APK download
-- [ ] impostazione timer
+- [ ] impostazione timer/audio
+
