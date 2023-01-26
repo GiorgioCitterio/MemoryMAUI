@@ -10,6 +10,7 @@
 ### Nugets:
 - **Microsoft.EntityFrameworkCore.Sqlite:**.
 - **Microsoft.EntityFrameworkCore.Design:**.
+- **Plugin.Maui.Audio:** Utilizzato per riprodurre musica all'interno dell'app.
 ---
 Modifiche/funzionalità da aggiungere:
 - [ ] Database sqlite
