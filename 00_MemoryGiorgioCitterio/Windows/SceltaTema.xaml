@@ -131,5 +131,35 @@
             WidthRequest="100"
             HeightRequest="50"
             BorderColor="Black"/>
+        <Button
+            Text="Spiegazione gioco del memory"
+            Clicked="SpiegMem"
+            Grid.Row="4"
+            Grid.Column="0"
+            Grid.ColumnSpan="5"
+            TextColor="White"
+            BackgroundColor="Black"
+            BorderWidth="1"
+            FontFamily="TimesNewRoman"
+            FontSize="12"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="185"
+            HeightRequest="35"/>
+        <Button
+            Text="Visualizza codice sorgente"
+            Clicked="codGit"
+            Grid.Row="5"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
+            TextColor="White"
+            BackgroundColor="Black"
+            BorderWidth="1"
+            FontFamily="TimesNewRoman"
+            FontSize="12"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            WidthRequest="170"
+            HeightRequest="35"/>
     </Grid>
 </ContentPage>

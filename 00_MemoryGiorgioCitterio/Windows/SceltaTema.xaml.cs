@@ -50,4 +50,14 @@ public partial class SceltaTema : ContentPage
         Dati.tema = Tema.Citta;
         await Navigation.PushAsync(new MainPage());
     }
+
+    private async void SpiegMem(object sender, EventArgs e)
+    {
+        await Launcher.Default.OpenAsync("https://it.wikipedia.org/wiki/Memoria_(gioco)");
+    }
+
+    private async void codGit(object sender, EventArgs e)
+    {
+        await Launcher.Default.OpenAsync("https://github.com/GiorgioCitterio/MemoryMAUI");
+    }
 }
