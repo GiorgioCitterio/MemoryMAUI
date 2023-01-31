@@ -24,6 +24,10 @@ public partial class Facile : ContentPage
 		InitializeComponent();
         sw.Start();
         this.audioManager = audioManager;
+        if (!eseguiMusica)
+        {
+            Audio();
+        }
         Random random = new Random();
         for (int i = 1; i < 9; i++)
         {
@@ -64,10 +68,6 @@ public partial class Facile : ContentPage
     }
     private async void HasClicked(object sender, EventArgs e)
     {
-        if (!eseguiMusica)
-        {
-            Audio();
-        }
         if (!esegui)
         {
             return;
