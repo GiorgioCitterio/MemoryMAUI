@@ -56,8 +56,8 @@ public partial class SceltaTema : ContentPage
         await Launcher.Default.OpenAsync("https://it.wikipedia.org/wiki/Memoria_(gioco)");
     }
 
-    private async void codGit(object sender, EventArgs e)
+    private async void Impostazioni(object sender, EventArgs e)
     {
-        await Launcher.Default.OpenAsync("https://github.com/GiorgioCitterio/MemoryMAUI");
+        await Navigation.PushAsync(new Windows.ImpostazioniWindows());
     }
 }

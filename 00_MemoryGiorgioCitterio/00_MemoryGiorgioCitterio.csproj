@@ -89,6 +89,9 @@
 	  <MauiXaml Update="Windows\Facile.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Windows\ImpostazioniWindows.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Windows\Medio.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

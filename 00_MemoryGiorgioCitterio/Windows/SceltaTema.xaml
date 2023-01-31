@@ -146,20 +146,14 @@
             VerticalOptions="Center"
             WidthRequest="185"
             HeightRequest="35"/>
-        <Button
-            Text="Visualizza codice sorgente"
-            Clicked="codGit"
+        <ImageButton
+            Source="imp.png"
+            Clicked="Impostazioni"
             Grid.Row="5"
-            Grid.Column="3"
-            Grid.ColumnSpan="2"
-            TextColor="White"
-            BackgroundColor="Black"
-            BorderWidth="1"
-            FontFamily="TimesNewRoman"
-            FontSize="12"
+            Grid.Column="4"
+            HeightRequest="100"
+            WidthRequest="100"
             HorizontalOptions="End"
-            VerticalOptions="End"
-            WidthRequest="170"
-            HeightRequest="35"/>
+            VerticalOptions="End"/>
     </Grid>
 </ContentPage>
