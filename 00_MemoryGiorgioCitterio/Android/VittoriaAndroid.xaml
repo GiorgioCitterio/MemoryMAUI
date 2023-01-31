@@ -31,40 +31,40 @@
             TextColor="Black"
             FontFamily="TimesNewRoman"
             FontSize="18"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"/>
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
             <Label
             x:Name="lbl2"
             Text="2: "
             TextColor="Black"
             FontFamily="TimesNewRoman"
             FontSize="18"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"/>
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
             <Label
             x:Name="lbl3"
             Text="3: "
             TextColor="Black"
             FontFamily="TimesNewRoman"
             FontSize="18"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"/>
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
             <Label
             x:Name="lbl4"
             Text="4: "
             TextColor="Black"
             FontFamily="TimesNewRoman"
             FontSize="18"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"/>
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
             <Label
             x:Name="lbl5"
             Text="5: "
             TextColor="Black"
             FontFamily="TimesNewRoman"
             FontSize="18"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"/>
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
         </StackLayout>
         <Button
             Text="⟹ Torna alla pagina principale ⟸"
