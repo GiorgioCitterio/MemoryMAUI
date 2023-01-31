@@ -10,8 +10,4 @@ public partial class ImpostazioniWindows : ContentPage
     {
         await Launcher.Default.OpenAsync("https://github.com/GiorgioCitterio/MemoryMAUI");
     }
-
-    private void Switch_Toggled(object sender, ToggledEventArgs e)
-    {
-    }
 }

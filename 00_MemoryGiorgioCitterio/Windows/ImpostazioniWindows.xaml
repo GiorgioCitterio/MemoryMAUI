@@ -5,7 +5,7 @@
              Title="Impostazioni">
     <VerticalStackLayout>
         <Label
-            Text="⚙️Impostazioni⚙️"
+            Text="🧑‍🔧⚙️Impostazioni⚙️🧑‍🔧"
             TextColor="White"
             FontFamily="LowBudget"
             FontSize="40"
@@ -13,12 +13,6 @@
             FontAttributes="Bold"
             HorizontalOptions="Center"
             VerticalOptions="Center"/>
-        <Switch
-            x:Name="btnMusica"
-            IsToggled="True"
-            OnColor="LightBlue"
-            ThumbColor="Blue"
-            Toggled="Switch_Toggled"/>
         <Button
             Text="Visualizza codice sorgente"
             Clicked="codGit"
