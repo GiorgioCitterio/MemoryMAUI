@@ -8,8 +8,6 @@
 - Il progetto è stato sviluppato utilizzando [.NET MAUI 6](https://learn.microsoft.com/it-it/dotnet/maui/what-is-maui?view=net-maui-6.0).
 ---
 ### Nugets:
-- **Microsoft.EntityFrameworkCore.Sqlite:**.
-- **Microsoft.EntityFrameworkCore.Design:**.
 - **Plugin.Maui.Audio:** Utilizzato per riprodurre musica all'interno dell'app.
 ---
 Modifiche/funzionalità da aggiungere:
@@ -19,5 +17,5 @@ Modifiche/funzionalità da aggiungere:
 - [x] Audio manager (facile, medio, difficile)
 - [ ] APK download
 - [ ] impostazione timer/audio
-- [ ] versione e codice sorg
+- [x] versione e codice sorg
 - [ ] icone
