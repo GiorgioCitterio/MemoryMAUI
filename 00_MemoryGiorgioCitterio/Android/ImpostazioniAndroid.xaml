@@ -2,18 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_00_MemoryGiorgioCitterio.Android.ImpostazioniAndroid"
-             Title="Impostazioni"
+             Title="Impostazioni"   
              BackgroundColor="Black">
     <VerticalStackLayout>
-        <Label
-            Text="🧑‍🔧⚙️Impostazioni⚙️🧑‍🔧"
-            TextColor="White"
-            FontFamily="LowBudget"
-            FontSize="25"
-            Margin="50"
-            FontAttributes="Bold"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"/>
+        
         <Button
             Text="Visualizza codice sorgente"
             Clicked="codGit"
