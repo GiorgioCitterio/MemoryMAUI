@@ -19,3 +19,4 @@ Modifiche/funzionalità da aggiungere:
 - [ ] impostazione timer/audio
 - [x] versione e codice sorg
 - [ ] icone
+- [ ] ridimensionamento immagini
