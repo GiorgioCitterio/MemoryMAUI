@@ -5,7 +5,15 @@
              Title="Impostazioni"   
              BackgroundColor="Black">
     <VerticalStackLayout>
-        
+        <Label
+            Text="🧑‍🔧⚙️Impostazioni⚙️🧑‍🔧"
+            TextColor="White"
+            FontFamily="LowBudget"
+            FontSize="25"
+            Margin="50"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
         <Button
             Text="Visualizza codice sorgente"
             Clicked="codGit"
@@ -13,8 +21,8 @@
             BackgroundColor="Black"
             BorderWidth="1"
             FontFamily="TimesNewRoman"
-            FontSize="14"
-            Margin="0, 100, 0, 0"
+            FontSize="15"
+            Margin="0, 550, 0, 0"
             HorizontalOptions="Start"
             VerticalOptions="End"
             WidthRequest="200"
