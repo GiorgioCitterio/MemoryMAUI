@@ -14,7 +14,7 @@ public partial class Facile : ContentPage
     public Stopwatch sw = new Stopwatch();
     public int rigaCorrente;
     public int colonnaCorrente;
-    public int secondi = 10;
+    public int secondi = 90;
     public bool vittoria = false;
     public bool esegui = true;
     public bool eseguiMusica = false;

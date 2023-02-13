@@ -9,7 +9,7 @@
             Text="🧑‍🔧⚙️Impostazioni⚙️🧑‍🔧"
             TextColor="White"
             FontFamily="LowBudget"
-            FontSize="25"
+            FontSize="23"
             Margin="50"
             FontAttributes="Bold"
             HorizontalOptions="Center"
@@ -25,7 +25,7 @@
             Margin="0, 550, 0, 0"
             HorizontalOptions="Start"
             VerticalOptions="End"
-            WidthRequest="200"
+            WidthRequest="250"
             HeightRequest="40"/>
     </VerticalStackLayout>
 </ContentPage>
