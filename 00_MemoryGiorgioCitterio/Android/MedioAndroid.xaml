@@ -6,7 +6,7 @@
              BackgroundColor="White">
     <Grid
         ColumnDefinitions="*, *, *, *, *, *"
-        RowDefinitions="120, 120, 120, 120, 110, 100"
+        RowDefinitions="115, 115, 115, 115, 120, 100"
         Padding="15">
         <ImageButton
             CornerRadius="15"

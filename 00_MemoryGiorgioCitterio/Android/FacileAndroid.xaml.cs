@@ -1,5 +1,6 @@
 using Plugin.Maui.Audio;
 using System.Diagnostics;
+using _00_MemoryGiorgioCitterio.Model;
 
 namespace _00_MemoryGiorgioCitterio.Android;
 
@@ -81,23 +82,23 @@ public partial class FacileAndroid : ContentPage
         ImageButton image = (ImageButton)sender;
         await image.RotateTo(180, 200);
         image.Rotation = 0;
-        switch (SceltaTemaAndroid.DatiAndroid.tema)
+        switch (SceltaTemaAndroid.dato.Tema)
         {
-            case TemaAndroid.Arte:
+            case Tema.Arte:
                 image.Source = "arte" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTemaAndroid.DatiAndroid.tema = TemaAndroid.Arte;
+                SceltaTemaAndroid.dato.Tema = Tema.Arte;
                 break;
-            case TemaAndroid.Supereroi:
+            case Tema.Supereroi:
                 image.Source = "marvel_" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTemaAndroid.DatiAndroid.tema = TemaAndroid.Supereroi;
+                SceltaTemaAndroid.dato.Tema = Tema.Supereroi;
                 break;
-            case TemaAndroid.Frutta:
+            case Tema.Frutta:
                 image.Source = "frutta" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTemaAndroid.DatiAndroid.tema = TemaAndroid.Frutta;
+                SceltaTemaAndroid.dato.Tema = Tema.Frutta;
                 break;
-            case TemaAndroid.Citta:
+            case Tema.Citta:
                 image.Source = "cit" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTemaAndroid.DatiAndroid.tema = TemaAndroid.Citta;
+                SceltaTemaAndroid.dato.Tema = Tema.Citta;
                 break;
             default:
                 break;
@@ -125,10 +126,11 @@ public partial class FacileAndroid : ContentPage
                     vittoria = true;
                     sw.Stop();
                     player.Stop();
-                    SceltaTemaAndroid.DatiAndroid.mosseImpiegate = mosse;
-                    SceltaTemaAndroid.DatiAndroid.tempoImpiegato = sw.Elapsed;
-                    SceltaTemaAndroid.DatiAndroid.data = DateTime.Now;
-                    SceltaTemaAndroid.DatiAndroid.difficolta = DifficoltaAndroid.Facile;
+                    SceltaTemaAndroid.dato.MosseImpiegate = mosse;
+                    SceltaTemaAndroid.dato.TempoImpiegato = sw.Elapsed;
+                    SceltaTemaAndroid.dato.Data = DateTime.Now;
+                    SceltaTemaAndroid.dato.Difficolta = Difficolta.Facile;
+                    await App.DatiRepo.AddPartita(SceltaTemaAndroid.dato);
                     await Navigation.PushAsync(new VittoriaAndroid());
                 }
                 lblCoppieTrovate.Text = "Coppie: " + coppieTrovate;

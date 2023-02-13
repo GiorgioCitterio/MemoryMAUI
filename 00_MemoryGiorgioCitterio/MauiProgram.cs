@@ -21,6 +21,9 @@ public static class MauiProgram
             });
 		builder.Services.AddSingleton(AudioManager.Current);
 		builder.Services.AddTransient<Facile>();
-		return builder.Build();
+
+        string dbPath = FileAccessHelper.GetFileLocalPath("Dati.db3"); //prendo percorso del db
+        builder.Services.AddSingleton<DatiRepository>(s => ActivatorUtilities.CreateInstance<DatiRepository>(s, dbPath));
+        return builder.Build();
 	}
 }
