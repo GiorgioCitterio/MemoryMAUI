@@ -14,59 +14,23 @@
             FontAttributes="Bold"
             HorizontalOptions="Center"
             VerticalOptions="Center"/>
-        <StackLayout
-            Padding="100">
-            <Label
-            Text="Ultimi 5 risultati:"
-            TextColor="Black"
-            Grid.Row="1"
-            Grid.Column="0"
-            FontFamily="TimesNewRoman"
-            FontSize="18"
-            FontAttributes="Bold"
-            HorizontalTextAlignment="Center"
-            VerticalTextAlignment="Center"/>
-            <Label
-            x:Name="lbl1"
-            Text="1: "
-            TextColor="Black"
-            FontFamily="TimesNewRoman"
-            FontSize="18"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"/>
-            <Label
-            x:Name="lbl2"
-            Text="2: "
-            TextColor="Black"
-            FontFamily="TimesNewRoman"
-            FontSize="18"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"/>
-            <Label
-            x:Name="lbl3"
-            Text="3: "
-            TextColor="Black"
-            FontFamily="TimesNewRoman"
-            FontSize="18"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"/>
-            <Label
-            x:Name="lbl4"
-            Text="4: "
-            TextColor="Black"
-            FontFamily="TimesNewRoman"
-            FontSize="18"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"/>
-            <Label
-            x:Name="lbl5"
-            Text="5: "
-            TextColor="Black"
-            FontFamily="TimesNewRoman"
-            FontSize="18"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"/>
-        </StackLayout>
+        <VerticalStackLayout>
+            <Button x:Name="GetPartite" Clicked="GetPartite_Clicked" Text="Visualizza le ultime 5 partite"/>
+            <CollectionView x:Name="datiList">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding Id}"/>
+                            <Label Text="{Binding Data}"/>
+                            <Label Text="{Binding MosseImpiegate}"/>
+                            <Label Text="{Binding TempoImpiegato}"/>
+                            <Label Text="{Binding Tema}"/>
+                            <Label Text="{Binding Difficolta}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
         <Button
             Text="⟹ Torna alla pagina principale ⟸"
             BackgroundColor="White"

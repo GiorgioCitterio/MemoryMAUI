@@ -1,5 +1,6 @@
 using Plugin.Maui.Audio;
 using System.Diagnostics;
+using _00_MemoryGiorgioCitterio.Model;
 
 namespace _00_MemoryGiorgioCitterio;
 
@@ -81,23 +82,23 @@ public partial class Facile : ContentPage
         ImageButton image = (ImageButton)sender;
         await image.RotateTo(180, 200);
         image.Rotation = 0;
-        switch (SceltaTema.Dati.tema)
+        switch (SceltaTema.dato.Tema)
         {
             case Tema.Arte:
                 image.Source = "arte" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTema.Dati.tema = Tema.Arte;
+                SceltaTema.dato.Tema = Tema.Arte;
                 break;
             case Tema.Supereroi:
                 image.Source = "marvel_" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTema.Dati.tema = Tema.Supereroi;
+                SceltaTema.dato.Tema = Tema.Supereroi;
                 break;
             case Tema.Frutta:
                 image.Source = "frutta" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTema.Dati.tema = Tema.Frutta;
+                SceltaTema.dato.Tema = Tema.Frutta;
                 break;
             case Tema.Citta:
                 image.Source = "cit" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTema.Dati.tema = Tema.Citta;
+                SceltaTema.dato.Tema = Tema.Citta;
                 break;
             default:
                 break;
@@ -125,10 +126,11 @@ public partial class Facile : ContentPage
                     player.Stop();
                     vittoria = true;
                     sw.Stop();
-                    SceltaTema.Dati.mosseImpiegate = mosse;
-                    SceltaTema.Dati.tempoImpiegato = sw.Elapsed;
-                    SceltaTema.Dati.data = DateTime.Now;
-                    SceltaTema.Dati.difficolta = Difficolta.Facile;
+                    SceltaTema.dato.MosseImpiegate = mosse;
+                    SceltaTema.dato.TempoImpiegato = sw.Elapsed;
+                    SceltaTema.dato.Data = DateTime.Now;
+                    SceltaTema.dato.Difficolta = Difficolta.Facile;
+                    await App.DatiRepo.AddPartita(SceltaTema.dato);
                     await Navigation.PushAsync(new Vittoria());
                 }
                 lblCoppieTrovate.Text = "Coppie: " + coppieTrovate;
