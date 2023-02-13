@@ -13,12 +13,12 @@
 - **SQLitePCLRaw.bundle_green**: Utilizzato per database sqlite
 ---
 Modifiche/funzionalità da aggiungere:
-- [ ] Database sqlite
+- [x] Database sqlite
 - [x] Markdown
 - [x] Android
 - [x] Audio manager (facile, medio, difficile)
 - [ ] APK download
-- [ ] impostazione timer/audio
+- [x] impostazioni
 - [x] versione e codice sorg
 - [ ] icone
 - [x] ridimensionamento immagini
