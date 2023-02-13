@@ -6,15 +6,14 @@ public partial class App : Application
 	public App(DatiRepository repo)
 	{
 		InitializeComponent();
+        DatiRepo = repo;
         if (DeviceInfo.Platform == DevicePlatform.WinUI)
         {
             MainPage = new NavigationPage(new SceltaTema());
-            DatiRepo = repo;
         }
         else if (DeviceInfo.Platform == DevicePlatform.Android)
         {
             MainPage = new NavigationPage(new Android.SceltaTemaAndroid());
-            DatiRepo = repo;
         }
     }
 }

@@ -10,73 +10,45 @@
             TextColor="Black"
             FontFamily="LowBudget"
             FontSize="27"
-            Margin="50"
+            Margin="0, 30, 0, 0"
             FontAttributes="Bold"
             HorizontalOptions="Center"
             VerticalOptions="Center"/>
-        <StackLayout>
-            <Label
-                Text="Ultimi 5 risultati:"
-                TextColor="Black"
-                Grid.Row="1"
-                Grid.Column="0"
-                FontFamily="TimesNewRoman"
-                FontSize="18"
-                FontAttributes="Bold"
-                HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"/>
-            <Label
-                x:Name="lbl1"
-                Text="1: "
-                TextColor="Black"
-                FontFamily="TimesNewRoman"
-                FontSize="18"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"/>
-            <Label
-                x:Name="lbl2"
-                Text="2: "
-                TextColor="Black"
-                FontFamily="TimesNewRoman"
-                FontSize="18"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"/>
-            <Label
-                x:Name="lbl3"
-                Text="3: "
-                TextColor="Black"
-                FontFamily="TimesNewRoman"
-                FontSize="18"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"/>
-            <Label
-                x:Name="lbl4"
-                Text="4: "
-                TextColor="Black"
-                FontFamily="TimesNewRoman"
-                FontSize="18"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"/>
-            <Label
-                x:Name="lbl5"
-                Text="5: "
-                TextColor="Black"
-                FontFamily="TimesNewRoman"
-                FontSize="18"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"/>
-        </StackLayout>
         <Button
             Text="⟹ Torna alla pagina principale ⟸"
-            BackgroundColor="White"
-            TextColor="Black"
+            BackgroundColor="Black"
+            TextColor="White"
             FontFamily="TimesNewRoman"
             FontSize="19"
             Clicked="ToHome"
             CornerRadius="10"
             VerticalOptions="EndAndExpand"
-            Margin="0,375, 0, 0"
-            HorizontalOptions="Center">
-        </Button>
+            Margin="0,30, 0, 0"
+            HorizontalOptions="Center"/>
+        <VerticalStackLayout>
+            <Button x:Name="GetPartite" Clicked="GetPartite_Clicked" Text="Visualizza le ultime 3 partite"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    FontFamily="TimesNewRoman"
+                    FontSize="19"
+                    CornerRadius="10"
+                    Margin="0, 30, 0, 0"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="Center"/>
+            <CollectionView x:Name="datiList" Margin="0, 30, 0, 0">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout HorizontalOptions="Center" Margin="10">
+                            <Label Text="{Binding Id, StringFormat='Partita numero: {0:F0}'}" FontFamily="TimesNewRoman" FontSize="20" TextColor="Black"/>
+                            <Label Text="{Binding Data, StringFormat='Data: {0:dd/MM/yyyy}'}" FontFamily="TimesNewRoman" FontSize="20" TextColor="Black"/>
+                            <Label Text="{Binding MosseImpiegate, StringFormat='Mosse: {0:F0}'}" FontFamily="TimesNewRoman" FontSize="20" TextColor="Black"/>
+                            <Label Text="{Binding TempoImpiegato, StringFormat='Tempo: {0:mm\\:ss}'}" FontFamily="TimesNewRoman" FontSize="20" TextColor="Black"/>
+                            <Label Text="{Binding Tema, StringFormat='Tema: {0:G}'}" FontFamily="TimesNewRoman" FontSize="20" TextColor="Black"/>
+                            <Label Text="{Binding Difficolta, StringFormat='Difficoltà: {0:G}'}" FontFamily="TimesNewRoman" FontSize="20" TextColor="Black"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

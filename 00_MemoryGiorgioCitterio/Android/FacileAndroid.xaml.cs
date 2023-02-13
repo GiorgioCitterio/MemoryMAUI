@@ -1,6 +1,5 @@
 using Plugin.Maui.Audio;
 using System.Diagnostics;
-using _00_MemoryGiorgioCitterio;
 using _00_MemoryGiorgioCitterio.Model;
 
 namespace _00_MemoryGiorgioCitterio.Android;

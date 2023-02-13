@@ -14,23 +14,6 @@
             FontAttributes="Bold"
             HorizontalOptions="Center"
             VerticalOptions="Center"/>
-        <VerticalStackLayout>
-            <Button x:Name="GetPartite" Clicked="GetPartite_Clicked" Text="Visualizza le ultime 5 partite"/>
-            <CollectionView x:Name="datiList">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout>
-                            <Label Text="{Binding Id}"/>
-                            <Label Text="{Binding Data}"/>
-                            <Label Text="{Binding MosseImpiegate}"/>
-                            <Label Text="{Binding TempoImpiegato}"/>
-                            <Label Text="{Binding Tema}"/>
-                            <Label Text="{Binding Difficolta}"/>
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </VerticalStackLayout>
         <Button
             Text="⟹ Torna alla pagina principale ⟸"
             BackgroundColor="White"
@@ -43,5 +26,30 @@
             Margin="50"
             HorizontalOptions="Center">
         </Button>
+        <VerticalStackLayout>
+            <Button x:Name="GetPartite" Clicked="GetPartite_Clicked" Text="Visualizza le ultime 3 partite"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    FontFamily="TimesNewRoman"
+                    FontSize="19"
+                    CornerRadius="10"
+                    Margin="0, 30, 0, 0"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="Center"/>
+            <CollectionView x:Name="datiList" Margin="0, 30, 0, 0">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout HorizontalOptions="Center" Margin="10">
+                            <Label Text="{Binding Id, StringFormat='Partita numero: {0:F0}'}" FontFamily="TimesNewRoman" FontSize="20" TextColor="Black"/>
+                            <Label Text="{Binding Data, StringFormat='Data: {0:dd/MM/yyyy}'}" FontFamily="TimesNewRoman" FontSize="20" TextColor="Black"/>
+                            <Label Text="{Binding MosseImpiegate, StringFormat='Mosse: {0:F0}'}" FontFamily="TimesNewRoman" FontSize="20" TextColor="Black"/>
+                            <Label Text="{Binding TempoImpiegato, StringFormat='Tempo: {0:mm\\:ss}'}" FontFamily="TimesNewRoman" FontSize="20" TextColor="Black"/>
+                            <Label Text="{Binding Tema, StringFormat='Tema: {0:G}'}" FontFamily="TimesNewRoman" FontSize="20" TextColor="Black"/>
+                            <Label Text="{Binding Difficolta, StringFormat='Difficoltà: {0:G}'}" FontFamily="TimesNewRoman" FontSize="20" TextColor="Black"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

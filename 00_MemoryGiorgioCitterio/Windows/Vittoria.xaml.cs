@@ -17,8 +17,7 @@ public partial class Vittoria : ContentPage
     private async void GetPartite_Clicked(object sender, EventArgs e)
     {
         List<Dati> partite = await App.DatiRepo.GetAllPartite();
-        List<Dati> ultimePart = new List<Dati>(5);
-        ultimePart = partite;
+        var ultimePart = partite.Skip(Math.Max(0, partite.Count() - 3));
         datiList.ItemsSource = ultimePart;
     }
 }
