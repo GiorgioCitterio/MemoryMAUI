@@ -25,7 +25,7 @@ public partial class FacileAndroid : ContentPage
         InitializeComponent();
         sw.Start();
         this.audioManager = audioManager;
-        if (!eseguiMusica)
+        if (!eseguiMusica && ImpostazioniAndroid.musicEnable)
         {
             Audio();
         }
