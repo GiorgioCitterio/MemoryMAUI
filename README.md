@@ -22,3 +22,4 @@ Modifiche/funzionalità da aggiungere:
 - [x] versione e codice sorg
 - [ ] icone
 - [x] ridimensionamento immagini
+- [ ] using class
