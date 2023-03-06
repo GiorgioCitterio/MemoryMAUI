@@ -28,80 +28,21 @@ public partial class Difficile : ContentPage
         {
             Audio();
         }
-        Random random = new Random();
-        for (int i = 1; i < 19; i++)
-        {
-            int count = 0;
-            while (count < 2)
-            {
-                int r = random.Next(0, 6);
-                int c = random.Next(0, 6);
-                if (matricePosNumeri[r, c] == 0)
-                {
-                    matricePosNumeri[r, c] = i;
-                }
-                else
-                {
-                    continue;
-                }
-                count++;
-            }
-        }
-        Dispatcher.StartTimer(TimeSpan.FromSeconds(1), () =>
-        {
-            TimeSpan ts = sw.Elapsed;
-            Dispatcher.DispatchAsync(async () =>
-            {
-                secondi -= 1;
-                if (secondi == 0 && vittoria == false)
-                {
-                    Audio();
-                    await Navigation.PushAsync(new Perso());
-                }
-                else
-                {
-                    lblTempo.Text = "Tempo: " + String.Format("{0:00}:{1:00}", ts.Minutes, ts.Seconds);
-                }
-            });
-            return true;
-        });
+        CreaGrid();
+        TimerAsync();        
     }
     private async void HasClicked(object sender, EventArgs e)
     {
         if (!esegui)
-        {
             return;
-        }
         else
             esegui = false;
         if (!(sender is ImageButton))
-        {
             return;
-        }
         ImageButton image = (ImageButton)sender;
         await image.RotateTo(180, 200);
         image.Rotation = 0;
-        switch (SceltaTema.dato.Tema)
-        {
-            case Tema.Arte:
-                image.Source = "arte" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTema.dato.Tema = Tema.Arte;
-                break;
-            case Tema.Supereroi:
-                image.Source = "marvel_" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTema.dato.Tema = Tema.Supereroi;
-                break;
-            case Tema.Frutta:
-                image.Source = "frutta" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTema.dato.Tema = Tema.Frutta;
-                break;
-            case Tema.Citta:
-                image.Source = "cit" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTema.dato.Tema = Tema.Citta;
-                break;
-            default:
-                break;
-        }
+        TemaCarte(image);
         contCarteGir++;
         lblMosse.Text = "Mosse: " + mosse;
         if (contCarteGir >= 2)
@@ -130,6 +71,7 @@ public partial class Difficile : ContentPage
                     SceltaTema.dato.Data = DateTime.Now;
                     SceltaTema.dato.Difficolta = Difficolta.Difficile;
                     await App.DatiRepo.AddPartita(SceltaTema.dato);
+                    await Task.Delay(500);
                     await Navigation.PushAsync(new Vittoria());
                 }
                 lblCoppieTrovate.Text = "Coppie: " + coppieTrovate;
@@ -169,5 +111,72 @@ public partial class Difficile : ContentPage
         player = audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("tetris.mp3"));
         player.Play();
         eseguiMusica = true;
+    }
+    private void TemaCarte(ImageButton image)
+    {
+        switch (SceltaTema.dato.Tema)
+        {
+            case Tema.Arte:
+                image.Source = "arte" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
+                SceltaTema.dato.Tema = Tema.Arte;
+                break;
+            case Tema.Supereroi:
+                image.Source = "marvel_" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
+                SceltaTema.dato.Tema = Tema.Supereroi;
+                break;
+            case Tema.Frutta:
+                image.Source = "frutta" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
+                SceltaTema.dato.Tema = Tema.Frutta;
+                break;
+            case Tema.Citta:
+                image.Source = "cit" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
+                SceltaTema.dato.Tema = Tema.Citta;
+                break;
+            default:
+                break;
+        }
+    }
+    private void CreaGrid()
+    {
+        Random random = new Random();
+        for (int i = 1; i < 19; i++)
+        {
+            int count = 0;
+            while (count < 2)
+            {
+                int r = random.Next(0, 6);
+                int c = random.Next(0, 6);
+                if (matricePosNumeri[r, c] == 0)
+                {
+                    matricePosNumeri[r, c] = i;
+                }
+                else
+                {
+                    continue;
+                }
+                count++;
+            }
+        }
+    }
+    private void TimerAsync()
+    {
+        Dispatcher.StartTimer(TimeSpan.FromSeconds(1), () =>
+        {
+            TimeSpan ts = sw.Elapsed;
+            Dispatcher.DispatchAsync(async () =>
+            {
+                secondi -= 1;
+                if (secondi == 0 && vittoria == false)
+                {
+                    Audio();
+                    await Navigation.PushAsync(new Perso());
+                }
+                else
+                {
+                    lblTempo.Text = "Tempo: " + String.Format("{0:00}:{1:00}", ts.Minutes, ts.Seconds);
+                }
+            });
+            return true;
+        });
     }
 }
