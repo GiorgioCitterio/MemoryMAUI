@@ -122,12 +122,11 @@
             Grid.ColumnSpan="5"
             TextColor="White"
             BackgroundColor="Black"
-            BorderWidth="1"
             FontFamily="TimesNewRoman"
-            FontSize="9"
+            FontSize="12"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            WidthRequest="149"
+            WidthRequest="189"
             HeightRequest="35"/>
         <ImageButton
             Source="imp.png"
