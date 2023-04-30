@@ -115,23 +115,23 @@ public partial class MedioAndroid : ContentPage
     }
     private void TemaCarte(ImageButton image)
     {
-        switch (SceltaTema.dato.Tema)
+        switch (SceltaTemaAndroid.dato.Tema)
         {
             case Tema.Arte:
                 image.Source = "arte" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTema.dato.Tema = Tema.Arte;
+                SceltaTemaAndroid.dato.Tema = Tema.Arte;
                 break;
             case Tema.Supereroi:
                 image.Source = "marvel_" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTema.dato.Tema = Tema.Supereroi;
+                SceltaTemaAndroid.dato.Tema = Tema.Supereroi;
                 break;
             case Tema.Frutta:
                 image.Source = "frutta" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTema.dato.Tema = Tema.Frutta;
+                SceltaTemaAndroid.dato.Tema = Tema.Frutta;
                 break;
             case Tema.Citta:
                 image.Source = "cit" + matricePosNumeri[Grid.GetRow(image), Grid.GetColumn(image)].ToString() + ".jpg";
-                SceltaTema.dato.Tema = Tema.Citta;
+                SceltaTemaAndroid.dato.Tema = Tema.Citta;
                 break;
             default:
                 break;
