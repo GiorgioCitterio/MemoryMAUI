@@ -6,9 +6,6 @@
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ---
-
-### Per scaricare l'app android <a href="https://github.com/GiorgioCitterio/MemoryMAUI/releases/tag/1.0/com.companyname.x_00_memorygiorgiocitterio-Signed.apk">clicca qui</a>
-
 ### Piattaforme:
 - Windows
 - Android
