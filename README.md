@@ -25,7 +25,7 @@ Modifiche/funzionalità da aggiungere:
 - [x] Markdown
 - [x] Android
 - [x] Audio manager (facile, medio, difficile)
-- [ ] APK download
+- [x] APK download
 - [x] impostazioni
 - [x] versione e codice sorg
 - [x] icone
