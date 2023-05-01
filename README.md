@@ -5,7 +5,6 @@
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
----
 ### [Come scaricare l'app](https://github.com/GiorgioCitterio/MemoryMAUI/wiki)
 ---
 ### Piattaforme:
