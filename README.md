@@ -31,8 +31,6 @@
 - <a  href="#nuget">Nuget Packages</a>
 - <a  href="#gifs">Video Of The App</a>
 
----
-
 ## Overview
 Memory MAUI è un gioco del memory disponibile per le piattaforme Android e Windows. Il gioco offre tre livelli di difficoltà: facile, medio e difficile. Oltre ai livelli di difficoltà, il gioco supporta anche la memorizzazione dei risultati e la riproduzione di musica di sottofondo. Inoltre, sono disponibili quattro diversi temi per personalizzare l'aspetto del gioco.
 
