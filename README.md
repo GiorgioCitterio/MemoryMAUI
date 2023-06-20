@@ -18,8 +18,7 @@
 
 ## Table of Contents
 - <a  href="#appoverview">App Overview</a>
-- <a  href="#systemreq">System Requirements</a>
-- <a  href="#installation">How To Install The App</a>
+- <a  href="#gameplay">Gameplay</a>
 - <a  href="#features">Features</a>
   - <a  href="#setdefloc">Set Default Location</a>
   - <a  href="#discurloc">Display Current Location</a>
@@ -31,10 +30,10 @@
 - <a  href="#nuget">Nuget Packages</a>
 - <a  href="#gifs">Video Of The App</a>
 
-## Overview
+## Overview <a name="appoverview"></a>
 Memory MAUI is a memory game available for Android and Windows platforms. The game offers three difficulty levels: easy, medium, and hard. In addition to the difficulty levels, the game also supports storing the results and playing background music. Furthermore, there are four different themes available to customize the game's appearance.
 
-## Gameplay
+## Gameplay <a name="gameplay"></a>
 1. Launch the Memory Game app on your device.
 2. Select the desired difficulty level: Easy, Medium, or Difficult.
 3. The game grid will be displayed, consisting of face-down cards.
@@ -46,12 +45,17 @@ Memory MAUI is a memory game available for Android and Windows platforms. The ga
 9. The game ends when all pairs have been successfully matched.
 10. Your score and time will be recorded and displayed at the end of the game.
 
-## Features
-1. Difficulty Levels: The game offers three difficulty levels to cater to different skill levels - Easy, Medium, and Difficult. Each level has a different grid size and card complexity.
-2. Result Storage: The game keeps track of the player's scores and times for each difficulty level. This allows players to track their progress and aim for better performance in subsequent sessions.
-3. Background Music: Enjoy playing the game with background music to enhance the gaming atmosphere. The game provides four different themes to choose from, allowing you to personalize your gaming experience.
-4. Theme Selection: Customize the appearance of the game by selecting one of the available themes. Choose a theme that suits your preferences and adds a visually pleasing touch to the game.
-5. Score and Timer Display: During gameplay, the game displays your current score and elapsed time. This allows you to track your performance and challenge yourself to improve with each playthrough.
+## Features <a name="features"></a>
+### 1. Difficulty Levels
+- The game offers three difficulty levels to cater to different skill levels - Easy, Medium, and Difficult. Each level has a different grid size and card complexity.
+### 2. Result Storage
+- The game keeps track of the player's scores and times for each difficulty level. This allows players to track their progress and aim for better performance in subsequent sessions.
+### 3. Background Music
+- Enjoy playing the game with background music to enhance the gaming atmosphere. The game provides four different themes to choose from, allowing you to personalize your gaming experience.
+### 4. Theme Selection
+- Customize the appearance of the game by selecting one of the available themes. Choose a theme that suits your preferences and adds a visually pleasing touch to the game.
+### 5. Score and Timer Display
+- During gameplay, the game displays your current score and elapsed time. This allows you to track your performance and challenge yourself to improve with each playthrough.
 
 ## Supported Platforms
 - Windows
