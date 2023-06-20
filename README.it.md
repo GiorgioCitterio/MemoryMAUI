@@ -16,7 +16,7 @@
 
 ---
 
-## Tabella dei Contenuti
+## Indice
 - <a href="#appoverview">Panoramica dell'app</a>
 - <a href="#gameplay">Modalità di gioco</a>
 - <a href="#features">Funzionalità</a>
@@ -74,9 +74,7 @@ iderato: Facile, Medio o Difficile.
 Per installare il gioco Memory sul tuo dispositivo Android, segui [questa guida](https://github.com/GiorgioCitterio/MemoryMAUI/wiki).
 
 ## Versione .NET MAUI: <a name="mauiversion"></a>
-Il progetto è stato sviluppato utilizzando [.NET MAUI 6](https://learn.microsoft.com/en-us/dotnet/maui/what-is-maui?view=net-maui-6.0
-
-), che offre le ultime funzionalità e miglioramenti per la creazione di app multipiattaforma.
+Il progetto è stato sviluppato utilizzando [.NET MAUI 6](https://learn.microsoft.com/en-us/dotnet/maui/what-is-maui?view=net-maui-6.0), che offre le ultime funzionalità e miglioramenti per la creazione di app multipiattaforma.
 
 ## Pacchetti NuGet <a name="nuget"></a>
 Il progetto utilizza i seguenti pacchetti NuGet:
