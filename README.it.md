@@ -38,9 +38,7 @@ Memory MAUI è un gioco di memoria disponibile per le piattaforme Android e Wind
 ## Modalità di gioco <a name="gameplay"></a>
 1. Avvia l'app Memory Game sul tuo dispositivo.
 2. Seleziona il tema desiderato: Arte, Marvel, Frutta, Città.
-3. Seleziona il livello di difficoltà des
-
-iderato: Facile, Medio o Difficile.
+3. Seleziona il livello di difficoltà desiderato: Facile, Medio o Difficile.
 4. Verrà visualizzata la griglia di gioco, composta da carte coperte.
 5. Tocca una carta per girarla e rivelare l'immagine.
 6. Tocca una seconda carta per girarla anche essa.
