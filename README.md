@@ -20,12 +20,11 @@
 - <a  href="#appoverview">App Overview</a>
 - <a  href="#gameplay">Gameplay</a>
 - <a  href="#features">Features</a>
-  - <a  href="#setdefloc">Set Default Location</a>
-  - <a  href="#discurloc">Display Current Location</a>
-  - <a  href="#searchforw">Search Weather Forecast Of Every City</a>
-  - <a  href="#lightdarktheme">Light And Dark Theme</a>
-  - <a  href="#temperatureschart">View Bar Chart Of Daily Temperatures</a>
-  - <a  href="#favorites">Add Cities To Favorites</a>
+  - <a  href="#difflvl">Difficulty Levels</a>
+  - <a  href="#resstor">Result Storage</a>
+  - <a  href="#backmus">Background Music</a>
+  - <a  href="#theme">Theme Selection</a>
+  - <a  href="#timer">Score and Timer Display</a>
 - <a  href="#mauiversion">.NET MAUI Version</a>
 - <a  href="#nuget">Nuget Packages</a>
 - <a  href="#gifs">Video Of The App</a>
@@ -47,15 +46,15 @@ Memory MAUI is a memory game available for Android and Windows platforms. The ga
 11. Your score and time will be recorded and displayed at the end of the game.
 
 ## Features <a name="features"></a>
-### 1. Difficulty Levels
+### 1. Difficulty Levels <a name="difflvl"></a>
 - The game offers three difficulty levels to cater to different skill levels - Easy, Medium, and Difficult. Each level has a different grid size and card complexity.
-### 2. Result Storage
+### 2. Result Storage <a name="rsstor"></a>
 - The game keeps track of the player's scores and times for each difficulty level. This allows players to track their progress and aim for better performance in subsequent sessions.
-### 3. Background Music
+### 3. Background Music <a name="backmus"></a>
 - Enjoy playing the game with background music to enhance the gaming atmosphere. The game provides four different themes to choose from, allowing you to personalize your gaming experience.
-### 4. Theme Selection
+### 4. Theme Selection <a name="theme"></a>
 - Customize the appearance of the game by selecting one of the available themes. Choose a theme that suits your preferences and adds a visually pleasing touch to the game.
-### 5. Score and Timer Display
+### 5. Score and Timer Display <a name="timer"></a>
 - During gameplay, the game displays your current score and elapsed time. This allows you to track your performance and challenge yourself to improve with each playthrough.
 
 ## Supported Platforms
