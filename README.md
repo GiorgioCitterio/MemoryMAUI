@@ -32,28 +32,52 @@
 - <a  href="#gifs">Video Of The App</a>
 
 ## Overview
-Memory MAUI è un gioco del memory disponibile per le piattaforme Android e Windows. Il gioco offre tre livelli di difficoltà: facile, medio e difficile. Oltre ai livelli di difficoltà, il gioco supporta anche la memorizzazione dei risultati e la riproduzione di musica di sottofondo. Inoltre, sono disponibili quattro diversi temi per personalizzare l'aspetto del gioco.
+Memory MAUI is a memory game available for Android and Windows platforms. The game offers three difficulty levels: easy, medium, and hard. In addition to the difficulty levels, the game also supports storing the results and playing background music. Furthermore, there are four different themes available to customize the game's appearance.
 
-## System Requirements
-Android device running Android OS (version 9 or higher)
+## Gameplay
+1. Launch the Memory Game app on your device.
+2. Select the desired difficulty level: Easy, Medium, or Difficult.
+3. The game grid will be displayed, consisting of face-down cards.
+4. Tap on a card to flip it and reveal the image.
+5. Tap on a second card to flip it as well.
+6. If the two flipped cards match, they will remain face-up.
+7. If the two flipped cards do not match, they will be flipped back face-down.
+8. Continue flipping cards and trying to find matching pairs until all pairs have been found.
+9. The game ends when all pairs have been successfully matched.
+10. Your score and time will be recorded and displayed at the end of the game.
 
-## Installation
-To install the Weather Forecast App on your Android device, follow [this guide](https://github.com/GiorgioCitterio/MemoryMAUI/wiki).
+## Features
+1. Difficulty Levels: The game offers three difficulty levels to cater to different skill levels - Easy, Medium, and Difficult. Each level has a different grid size and card complexity.
+2. Result Storage: The game keeps track of the player's scores and times for each difficulty level. This allows players to track their progress and aim for better performance in subsequent sessions.
+3. Background Music: Enjoy playing the game with background music to enhance the gaming atmosphere. The game provides four different themes to choose from, allowing you to personalize your gaming experience.
+4. Theme Selection: Customize the appearance of the game by selecting one of the available themes. Choose a theme that suits your preferences and adds a visually pleasing touch to the game.
+5. Score and Timer Display: During gameplay, the game displays your current score and elapsed time. This allows you to track your performance and challenge yourself to improve with each playthrough.
 
-### Platforms:
+## Supported Platforms
 - Windows
 - Android
----
-### .NET MAUI Version:
-- The project was developed using [.NET MAUI 6](https://learn.microsoft.com/en-us/dotnet/maui/what-is-maui?view=net-maui-6.0).
----
-### NuGet Packages:
-- **Plugin.Maui.Audio**: Used for playing music within the app.
-- **sqlite-net-pc**: Used for SQLite database.
-- **SQLitePCLRaw.bundle_green**: Used for SQLite database.
 
----
-Changes/Features to Add:
+## System Requirements
+- Android: Requires an Android device running Android OS version 9 or higher.
+- Windows: Requires a Windows PC with Windows OS version 10 or higher.
+
+## Installation
+To install Memory game on your Android device, follow [this guide](https://github.com/GiorgioCitterio/MemoryMAUI/wiki).
+
+## Credits
+- The Memory Game app was developed using C# and the .NET framework.
+- Special thanks to [contributors] for their contributions to the game.
+
+## .NET MAUI Version:
+The project was developed using [.NET MAUI 6](https://learn.microsoft.com/en-us/dotnet/maui/what-is-maui?view=net-maui-6.0), which provides the latest features and improvements for building cross-platform apps.
+
+## NuGet Packages
+The project utilizes the following NuGet packages:
+- Plugin.Maui.Audio: Used for playing background music within the app.
+- sqlite-net-pc: Used for handling the SQLite database in the app.
+- SQLitePCLRaw.bundle_green: Used for SQLite database support.
+  
+## Changes/Features to Add:
 - [x] SQLite database
 - [x] Markdown
 - [x] Android
