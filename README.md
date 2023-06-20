@@ -51,7 +51,7 @@ Memory MAUI is a memory game available for Android and Windows platforms. The ga
 ## Features <a name="features"></a>
 ### 1. Difficulty Levels <a name="difflvl"></a>
 - The game offers three difficulty levels to cater to different skill levels - Easy, Medium, and Difficult. Each level has a different grid size and card complexity.
-### 2. Result Storage <a name="rsstor"></a>
+### 2. Result Storage <a name="resstor"></a>
 - The game keeps track of the player's scores and times for each difficulty level. This allows players to track their progress and aim for better performance in subsequent sessions.
 ### 3. Background Music <a name="backmus"></a>
 - Enjoy playing the game with background music to enhance the gaming atmosphere. The game provides four different themes to choose from, allowing you to personalize your gaming experience.
