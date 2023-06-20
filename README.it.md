@@ -33,7 +33,7 @@
 - <a href="#todo">Cambiamenti/Funzionalità da aggiungere</a>
 
 ## Panoramica dell'app <a name="appoverview"></a>
-Memory MAUI è un gioco di memoria disponibile per le piattaforme Android e Windows. Il gioco offre tre livelli di difficoltà: facile, medio e difficile. Oltre ai livelli di difficoltà, il gioco supporta anche la memorizzazione dei risultati e la riproduzione di musica di sottofondo. Inoltre, sono disponibili quattro diversi temi per personalizzare l'aspetto del gioco.
+Memory MAUI è un gioco disponibile per le piattaforme Android e Windows. Offre tre livelli di difficoltà: facile, medio e difficile. Oltre ai livelli di difficoltà, il gioco supporta anche la memorizzazione dei risultati e la riproduzione di musica di sottofondo. Inoltre, sono disponibili quattro diversi temi per personalizzare l'aspetto del gioco.
 
 ## Modalità di gioco <a name="gameplay"></a>
 1. Avvia l'app Memory Game sul tuo dispositivo.
@@ -69,7 +69,7 @@ Memory MAUI è un gioco di memoria disponibile per le piattaforme Android e Wind
 - Windows: Richiede un PC Windows con sistema operativo Windows versione 10 o successiva.
 
 ## Installazione <a name="installation"></a>
-Per installare il gioco Memory sul tuo dispositivo Android, segui [questa guida](https://github.com/GiorgioCitterio/MemoryMAUI/wiki).
+Per installare de gioco Memory sul tuo dispositivo Android, segui [questa guida](https://github.com/GiorgioCitterio/MemoryMAUI/wiki).
 
 ## Versione .NET MAUI: <a name="mauiversion"></a>
 Il progetto è stato sviluppato utilizzando [.NET MAUI 6](https://learn.microsoft.com/en-us/dotnet/maui/what-is-maui?view=net-maui-6.0), che offre le ultime funzionalità e miglioramenti per la creazione di app multipiattaforma.
