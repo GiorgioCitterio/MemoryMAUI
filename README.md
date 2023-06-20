@@ -35,7 +35,7 @@ Memory MAUI is a memory game available for Android and Windows platforms. The ga
 
 ## Gameplay <a name="gameplay"></a>
 1. Launch the Memory Game app on your device.
-2. 2. Select the desired theme: Art, Marvel, Fruit, Cities.
+2. Select the desired theme: Art, Marvel, Fruit, Cities.
 3. Select the desired difficulty level: Easy, Medium, or Difficult.
 4. The game grid will be displayed, consisting of face-down cards.
 5. Tap on a card to flip it and reveal the image.
