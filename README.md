@@ -25,9 +25,12 @@
   - <a  href="#backmus">Background Music</a>
   - <a  href="#theme">Theme Selection</a>
   - <a  href="#timer">Score and Timer Display</a>
+- <a  href="#platforms">Supported platforms</a>
+- <a  href="#sysreq">System Requirments</a>
+- <a  href="#installation">Installation</a>
 - <a  href="#mauiversion">.NET MAUI Version</a>
 - <a  href="#nuget">Nuget Packages</a>
-- <a  href="#gifs">Video Of The App</a>
+- <a  href="#todo">Changes/Features to Add</a>
 
 ## Overview <a name="appoverview"></a>
 Memory MAUI is a memory game available for Android and Windows platforms. The game offers three difficulty levels: easy, medium, and hard. In addition to the difficulty levels, the game also supports storing the results and playing background music. Furthermore, there are four different themes available to customize the game's appearance.
@@ -57,31 +60,27 @@ Memory MAUI is a memory game available for Android and Windows platforms. The ga
 ### 5. Score and Timer Display <a name="timer"></a>
 - During gameplay, the game displays your current score and elapsed time. This allows you to track your performance and challenge yourself to improve with each playthrough.
 
-## Supported Platforms
+## Supported Platforms <a name="platforms"></a>
 - Windows
 - Android
 
-## System Requirements
+## System Requirements <a name="sysreq"></a>
 - Android: Requires an Android device running Android OS version 9 or higher.
 - Windows: Requires a Windows PC with Windows OS version 10 or higher.
 
-## Installation
+## Installation <a name="installation"></a>
 To install Memory game on your Android device, follow [this guide](https://github.com/GiorgioCitterio/MemoryMAUI/wiki).
 
-## Credits
-- The Memory Game app was developed using C# and the .NET framework.
-- Special thanks to [contributors] for their contributions to the game.
-
-## .NET MAUI Version:
+## .NET MAUI Version: <a name="mauiversion"></a>
 The project was developed using [.NET MAUI 6](https://learn.microsoft.com/en-us/dotnet/maui/what-is-maui?view=net-maui-6.0), which provides the latest features and improvements for building cross-platform apps.
 
-## NuGet Packages
+## NuGet Packages <a name="nuget"></a>
 The project utilizes the following NuGet packages:
 - Plugin.Maui.Audio: Used for playing background music within the app.
 - sqlite-net-pc: Used for handling the SQLite database in the app.
 - SQLitePCLRaw.bundle_green: Used for SQLite database support.
   
-## Changes/Features to Add:
+## Changes/Features to Add: <a name="todo"></a>
 - [x] SQLite database
 - [x] Markdown
 - [x] Android
