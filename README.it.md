@@ -12,7 +12,7 @@
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
-<a href="https://github.com/GiorgioCitterio/MemoryMAUI/blob/master/README.it.md">README.it 🇮🇹</a>
+<a href="https://github.com/GiorgioCitterio/MemoryMAUI/blob/master/README.md">README.us 🇮🇹</a>
 
 ---
 
